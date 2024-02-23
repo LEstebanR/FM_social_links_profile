@@ -15,10 +15,10 @@ type CardProps = {
 
 const Card: FC<CardProps> = ({ info }) => {
   return (
-    <div className="flex max-h-card w-11/12 max-w-card flex-col items-center gap-6   rounded-xl bg-darkGrey p-10 font-sans">
-      <img src={info.avatar} className="h-16 rounded-full" />
+    <main className="flex max-h-card w-11/12 max-w-card flex-col items-center gap-6   rounded-xl bg-darkGrey p-10 font-sans">
+      <img src={info.avatar} className="h-16 rounded-full" alt="avatar" />
       <div className="flex flex-col">
-        <p className="text-2xl text-white">{info.name}</p>
+        <h1 className="text-2xl text-white">{info.name}</h1>
         <p className="text-sm font-bold text-primary">{info.location}</p>
       </div>
 
@@ -32,7 +32,7 @@ const Card: FC<CardProps> = ({ info }) => {
           </a>
         ))}
       </div>
-    </div>
+    </main>
   );
 };
 
